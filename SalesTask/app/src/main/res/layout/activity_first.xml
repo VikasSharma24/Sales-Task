@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vikas.salestask.FirstActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15sp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="15sp"
+                    app:cardElevation="10sp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20sp"
+                        android:layout_marginTop="20sp"
+                        android:orientation="vertical"
+                        android:padding="20sp">
+
+                        <com.beardedhen.androidbootstrap.BootstrapButton
+                            android:id="@+id/btn_customer"
+                            style="@style/home_button"
+                            android:layout_width="200sp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5sp"
+                            android:layout_weight="1"
+                            android:text="Customer"
+                            app:bootstrapBrand="success"
+                            app:bootstrapSize="lg"
+                            android:textAllCaps="true"
+                            app:buttonMode="regular"
+                            app:roundedCorners="true"
+                            app:showOutline="false" />
+
+                        <com.beardedhen.androidbootstrap.BootstrapButton
+                            android:id="@+id/btn_supplier"
+                            style="@style/home_button"
+                            android:layout_width="200sp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="20sp"
+                            android:textAllCaps="true"
+                            android:layout_weight="1"
+                            android:text="Supplier"
+                            app:bootstrapBrand="danger"
+                            app:bootstrapSize="lg"
+                            app:buttonMode="regular"
+                            app:roundedCorners="true"
+                            app:showOutline="false" />
+
+                        <com.beardedhen.androidbootstrap.BootstrapButton
+                            android:id="@+id/btn_salesman"
+                            style="@style/home_button"
+                            android:layout_width="200sp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="20sp"
+                            android:layout_weight="1"
+                            android:text="Sales Man"
+                            android:textAllCaps="true"
+                            app:bootstrapBrand="warning"
+                            app:bootstrapSize="lg"
+                            app:buttonMode="regular"
+                            app:roundedCorners="true"
+                            app:showOutline="false" />
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
